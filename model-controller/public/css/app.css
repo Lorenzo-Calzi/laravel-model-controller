@@ -1,35 +1,72 @@
-.container{
-    background-color: grey;
-    font-family: 'Bona Nova', serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bona Nova", serif;
 }
 
-.card{
-    display: inline-block;
-    border: 2px solid red;
-    border-radius: px;
-    padding: 25px;
-    text-align: center;
-    background-color: white;
+* body {
+  background-color: rgba(0, 0, 0, 0.829);
 }
 
+* body .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #5353ff;
+  color: white;
+}
 
-h3{
-    text-transform: uppercase;
+* body .title h1 {
+  font-size: 35px;
 }
-h3, h5{
-    margin: 0;
-    padding: 5px;
-    font-size: 25px;
+
+* body .title i {
+  margin: 0 20px;
+  font-size: 20px;
 }
-h5{
-    color: rgb(65, 65, 65);
+
+* body .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
 }
-span{
-    display: block;
-    padding-bottom: 5px;
-    font-size: 18px;
-    color: rgb(70, 70, 70);
+
+* body .container .card {
+  width: 300px;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 20px;
+  text-align: center;
+  background-color: white;
 }
-strong{
-    color: red;
+
+* body .container .card h3 {
+  text-transform: uppercase;
 }
+
+* body .container .card h3,
+* body .container .card h5 {
+  margin: 0;
+  padding: 5px;
+  font-size: 25px;
+}
+
+* body .container .card h5 {
+  color: #414141;
+}
+
+* body .container .card span {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: #464646;
+}
+
+* body .container .card strong {
+  color: red;
+}
+
