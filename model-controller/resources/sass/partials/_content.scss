@@ -1,0 +1,40 @@
+.container{
+    background-color: grey;
+    font-family: 'Bona Nova', serif;
+
+    .card{
+        display: inline-block;
+        border: 2px solid red;
+        border-radius: px;
+        padding: 25px;
+        text-align: center;
+        background-color: white;
+
+        h3{
+            text-transform: uppercase;
+        }
+        h3, h5{
+            margin: 0;
+            padding: 5px;
+            font-size: 25px;
+        }
+        h5{
+            color: rgb(65, 65, 65);
+        }
+        span{
+            display: block;
+            padding-bottom: 5px;
+            font-size: 18px;
+            color: rgb(70, 70, 70);
+        }
+        strong{
+            color: red;
+        }
+    }
+}
+
+
+
+
+
+

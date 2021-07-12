@@ -10,10 +10,20 @@ class PageController extends Controller
     {   
         $movies = Movie::all();
 
-        /* foreach($movies as $movie){
-                echo $movie->title;
-        } */
-        $movies->title;
+        foreach($movies as $movie){
+
+            ?>
+            <div class="container">
+                <div class="card">
+                    <h3> <?php echo $movie->title;?> </h3>
+                    <h5> <?php echo $movie->original_title;?> </h5>
+                    <span> <?php echo $movie->nationality;?> </span>
+                    <span> <?php echo $movie->date;?> </span>
+                    <strong> <?php echo $movie->vote;?> </strong>
+                </div>
+            </div>
+            <?php
+        }
 
         return view('movies.home');
     }
